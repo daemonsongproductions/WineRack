@@ -35,6 +35,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'cancan'
 gem 'devise'
+gem 'foreman'
 gem 'mc-settings'
 gem 'pg'
 
