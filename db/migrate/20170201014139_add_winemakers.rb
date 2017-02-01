@@ -1,8 +1,7 @@
-class AddVineyards < ActiveRecord::Migration[5.0]
+class AddWinemakers < ActiveRecord::Migration[5.0]
   def change
 
-
-    create_table :vineyards do |t|
+    create_table :winemakers do |t|
       t.string :name, null: false
       t.string :region
       t.string :notes

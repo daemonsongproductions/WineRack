@@ -13,14 +13,14 @@ DATA MODEL:
 
 - Wines:
   - id
-  - vineyard_id
+  - winemaker_id
   - name
   - vintage
   - style
   - rating
   - notes
   
-- Vineyards:
+- Winemakers:
   - id
   - region
   - notes

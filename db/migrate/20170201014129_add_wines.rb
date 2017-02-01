@@ -7,7 +7,7 @@ class AddWines < ActiveRecord::Migration[5.0]
       t.string :style
       t.integer :rating
       t.string :notes
-      t.integer :vineyard_id
+      t.integer :winemaker_id
     end
 
   end
