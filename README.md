@@ -1,24 +1,39 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Things to track:
 
-Things you may want to cover:
+- Winery
+- Name of the wine
+- Vintage
+- Rating
+- Notes
 
-* Ruby version
 
-* System dependencies
+DATA MODEL:
 
-* Configuration
+- Wines:
+  - id
+  - vineyard_id
+  - name
+  - vintage
+  - style
+  - rating
+  - notes
+  
+- Vineyards:
+  - id
+  - region
+  - notes
+  
+- Drinks:
+  - id
+  - wine_id
+  - date
+  - user_id
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Bottles:
+  - id
+  - wine_id
+  - date_acquired
+  - date_opened
+  - user_id
