@@ -36,6 +36,8 @@ gem 'devise'
 gem 'foreman'
 gem 'mc-settings'
 gem 'pg'
+gem 'webpacker', github: 'rails/webpacker'
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
