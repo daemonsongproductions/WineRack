@@ -1,0 +1,3 @@
+class Glass < ApplicationRecord
+
+end

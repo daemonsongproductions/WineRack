@@ -7,7 +7,11 @@
     <%= text_field_tag :wine_name, '', class: "form-control" %>
   </div>
   <div class="form-group">
-    <label for="wine_name">When you drank it</label>
+    <label for="vintage">What year it was from</label>
+    <%= text_field_tag :vintage, '', type: "number", class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <label for="date">When you drank it</label>
     <%= date_field_tag :date, '', class: "form-control" %>
   </div>
   <div class="form-group">
