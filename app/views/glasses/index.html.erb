@@ -1,30 +1,9 @@
-<h2>What did ya just have a glass of?</h2>
+<h2>Wines you've enjoyed (or hated, maybe)</h2>
 
-<%= form_tag glasses_path, method: :post do |f| %>
+<h4><%= link_to 'Tell me what you drank!', new_glass_path %></h4>
 
-  <div class="form-group">
-    <label for="wine_name">What it was called</label>
-    <%= text_field_tag :wine_name, '', class: "form-control" %>
-  </div>
-  <div class="form-group">
-    <label for="vintage">What year it was from</label>
-    <%= text_field_tag :vintage, '', type: "number", class: "form-control" %>
-  </div>
-  <div class="form-group">
-    <label for="winemaker">Who made the wine</label>
-    <%= text_field_tag :winemaker, '', type: "text", class: "form-control" %>
-  </div>
-  <div class="form-group">
-    <label for="date">When you drank it</label>
-    <%= date_field_tag :date, '', class: "form-control" %>
-  </div>
-  <div class="form-group">
-    <label for="rating">How good it was</label>
-    <%= select_tag "rating", options_for_select(1..5), class: "form-control" %>
-  </div>
-  <div class="form-group">
-    <label for="notes">Stuff you thought</label>
-    <%= text_area_tag :notes, '', class: "form-control" %>
-  </div>
-  <button type="submit" class="btn btn-default">Submit</button>
-<% end %>
+<ul>
+  <% @glasses.each do |glass| %>
+    <li><%=glass.wine.name%></li>
+  <% end %>
+</ul>
