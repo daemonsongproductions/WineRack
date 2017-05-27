@@ -37,7 +37,7 @@ gem 'foreman'
 gem 'immutable-struct'
 gem 'mc-settings'
 gem 'pg'
-gem 'webpacker', github: 'rails/webpacker'
+gem 'webpacker'
 
 
 # Use Capistrano for deployment
