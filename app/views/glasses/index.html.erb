@@ -4,6 +4,15 @@
 
 <ul>
   <% @glasses.each do |glass| %>
-    <li><%=glass.wine.name%></li>
+    <li>
+      <%=glass.wine.name%> (<%=glass.wine.vintage%>)
+      <% (1..5).each do |i| %>
+        <% if i <= glass.rating %>
+          <i class="fa fa-star" aria-hidden="true"></i>
+        <% else %>
+          <i class="fa fa-star-o" aria-hidden="true"></i>
+        <% end %>
+      <% end %>
+    </li>
   <% end %>
 </ul>
