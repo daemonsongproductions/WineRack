@@ -5,7 +5,8 @@
 <ul>
   <% @glasses.each do |glass| %>
     <li>
-      <%=glass.wine.name%> (<%=glass.wine.vintage%>)
+      <%= "#{glass.wine.winemaker.name} #{glass.wine.name}"%> (<%=glass.wine.vintage%>)
+      <br/>
       <% (1..5).each do |i| %>
         <% if i <= glass.rating %>
           <i class="fa fa-star" aria-hidden="true"></i>
@@ -13,6 +14,8 @@
           <i class="fa fa-star-o" aria-hidden="true"></i>
         <% end %>
       <% end %>
+      <br/>
+      <small><%= time_ago_in_words(glass.date) %> ago</small>
     </li>
   <% end %>
 </ul>
